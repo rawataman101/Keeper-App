@@ -1,4 +1,5 @@
 import React from "react";
+import ClearAllIcon from '@mui/icons-material/ClearAll';
 
 function Note(props) {
     function handleClick() {
@@ -8,7 +9,8 @@ function Note(props) {
         <div className = "note">
         <h1>{props.title}</h1>
         <p>{props.content}</p>
-        <button onClick={handleClick}>DELETE</button>
+        <button onClick={handleClick}><ClearAllIcon/></button>
+
     </div>
     );
 }
